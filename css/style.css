@@ -1,220 +1,390 @@
 *{
-    margin: 0;
-    padding: 0;
- }
- 
- body{
-     font-family: Roboto, sans-serif;
- }
- .container{
-     max-width: 1160px;
-     margin: 0 auto;
-     gap: 1rem;
-     align-items: center;
- }
- 
- header{ /T R B L/
-     padding: 1.25rem 1.25rem 0 1.25rem ;
- }
- 
- header .container{
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between; /* alinha horinzontalmente com espaço entre eles  */
-     align-items: center; /* alinha ao centro verticalmente*/
- }
- 
- header .brand{
-     display: flex;
-     flex-direction: row;
- }
- 
- header .brand img{
-     width: 2.5rem;
- }
- 
-  header .brand h1{
-     font-size: 1.5rem;
-     color: #01528a;
-     font-weight: 400;
-     line-height: 2rem;
-  }
- 
-  header nav{}
- 
-  header nav ul {
-     display: flex;
-     list-style-type: none;
-     gap: 1rem;
-  }
- 
-  header nav li {
-     font-weight: 300;
-     line-height: 2rem;
-  }
- 
-  header nav a {
-     text-decoration: none;
-     color: #000;
-     text-transform: uppercase;
-     padding-bottom: 1rem;
-  }
- 
-  header nav a:hover, 
-  header nav a.active{
-     color: #0889d4;
-  }
- 
-  header nav a.active{
-     font-weight: 500;
-     border-bottom: 2px solid #0889d4;
-  }
- 
-  header nav button{
-     background-color: #0889d4;
-     color: #FFF;
-     border: 0;
-     text-transform: uppercase;
-     font-weight: 300;
-     font-size: 0.875rem;
-     padding: .5rem 1.25rem;
-     border-radius: 0.25rem; 
-     margin-left: 1rem;
-  }
- 
- main {}
- 
- #banner {
-    height: 500px;
-    border: 1px solid #dcdceb;
-    background-color: #FFF;
-    border-radius: 0.625rem;
-    color: #01528a;
-    /*Colocar uma imagem de fundo */
-    background-image: url('../Img/background-house.png');
-    background-repeat: no-repeat;
-    background-position: right;
- }
- 
- #banner .banner-content {
-    width: 650px;
-    height: 100%;
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0), #FFFFFF 50% );
- }
- 
- #banner h3 {
-    margin: 0;
- }
- 
- #banner .banner-body1{
-    padding: 3.75rem 0 0 2.8rem;
-    font-size: 4rem;
-    font-weight: 300;
- }
- 
- #banner .banner-body2{
-    margin-top: 1rem;
-    margin-left: 2.8rem;
-    font-weight: 500;
-    font-size: 1.4rem;
- }
- 
- section{
-    margin-top: 4rem;
- }
- 
- section h2{ /* T/B L/R */
-    padding: 2rem 0;
-    font-weight: 300;
-    text-align: center;
-    font-size: 2.5rem;
-    color: #01528a;
-    margin: 2rem 0;
- }
- 
- #cards {}
- 
- #cards .cards-content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
- }
- 
- #cards .card{
-    width: 530px;
-    display: flex;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
     gap: 1rem;
-    box-shadow: rgb(0 0 0 / 20%) 0 2px 1px -1px, 
-                rgb(0 0 0 / 14%) 0 1px 1px 0, 
-                rgb(0 0 0/ 12%) 0 1px 3px 0;
-    border-radius: 0.6rem;
-    margin-bottom: 3rem;
-    padding: 1rem; 
-    position: relative;              
- }
- 
- #cards .card img{
-    width: 160px;
-    height: 180px;
- }
- 
- #cards .card h4{
-    font-weight: 400;
-    margin-bottom: 0.8rem;
- }
- 
- #cards .card p{
-    font-weight: 300;
-    text-align: justify;
-    color: #8f90a6;
-    max-height: 4.5rem;
-    overflow: hidden;
-    margin-bottom: 1.3rem;
- }
- 
- #cards .card-price{
-    position: absolute;
+    align-items: center;
+}
+
+header{ /T R B L/
+    padding: 1.25rem 1.25rem 0 1.25rem ;
+}
+
+header .container{
     display: flex;
-    justify-content: end;
-    right: 1rem;
-    bottom: 1rem;
- }
- 
- #cards .card-price p{
-    background-color: #0889d4;
-    color: #fff;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
-    margin: 0;
- }
- 
- #reasons {}
- 
- #reasons .reasons-content{
+    flex-direction: row;
+    justify-content: space-between; /* alinha horinzontalmente com espaço entre eles  */
+    align-items: center; /* alinha ao centro verticalmente*/
+}
+
+header .brand{
     display: flex;
-    justify-content: space-between;
- }
- 
- #reasons .reason{
-    border-left: 2px solid #0889d4;
-    width: 100%;
- }
- 
- #reasons .reason:first-of-type{
-    border-left: none;
- }
- 
- #reasons .reason p{
-    text-align: center;
- }
- 
- #reasons .reason-value{
-    font-size: 2rem;
- }
- 
- #reasons .reason-label{
+    flex-direction: row;
+}
+
+header .brand img{
+    width: 2.5rem;
+}
+
+ header .brand h1{
     font-size: 1.5rem;
-    font-weight: 300;
-    color: #8f90a6;
+    color: #01528a;
+    font-weight: 400;
+    line-height: 2rem;
  }
+
+ header nav{}
+
+ header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+ }
+
+ header nav li {
+    font-weight: 300;
+    line-height: 2rem;
+ }
+
+ header nav a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+ }
+
+ header nav a:hover, 
+ header nav a.active{
+    color: #0889d4;
+ }
+
+ header nav a.active{
+    font-weight: 500;
+    border-bottom: 2px solid #0889d4;
+ }
+
+ header nav button{
+    background-color: #0889d4;
+    color: #FFF;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.875rem;
+    padding: .5rem 1.25rem;
+    border-radius: 0.25rem; 
+    margin-left: 1rem;
+ }
+
+main {}
+
+#banner {
+   height: 500px;
+   border: 1px solid #dcdceb;
+   background-color: #FFF;
+   border-radius: 0.625rem;
+   color: #01528a;
+   /*Colocar uma imagem de fundo */
+   background-image: url('../Img/background-house.png');
+   background-repeat: no-repeat;
+   background-position: right;
+}
+
+#banner .banner-content {
+   width: 650px;
+   height: 100%;
+   background: linear-gradient(270deg, rgba(255, 255, 255, 0), #FFFFFF 50% );
+}
+
+#banner h3 {
+   margin: 0;
+}
+
+#banner .banner-body1{
+   padding: 3.75rem 0 0 2.8rem;
+   font-size: 4rem;
+   font-weight: 300;
+}
+
+#banner .banner-body2{
+   margin-top: 1rem;
+   margin-left: 2.8rem;
+   font-weight: 500;
+   font-size: 1.4rem;
+}
+
+section{
+   margin-top: 4rem;
+}
+
+section h2{ /* T/B L/R */
+   padding: 2rem 0;
+   font-weight: 300;
+   text-align: center;
+   font-size: 2.5rem;
+   color: #01528a;
+   margin: 2rem 0;
+}
+
+#cards {}
+
+#cards .cards-content{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+#cards .card{
+   width: 530px;
+   display: flex;
+   gap: 1rem;
+   box-shadow: rgb(0 0 0 / 20%) 0 2px 1px -1px, 
+               rgb(0 0 0 / 14%) 0 1px 1px 0, 
+               rgb(0 0 0/ 12%) 0 1px 3px 0;
+   border-radius: 0.6rem;
+   margin-bottom: 3rem;
+   padding: 1rem; 
+   position: relative;              
+}
+
+#cards .card img{
+   width: 160px;
+   height: 180px;
+}
+
+#cards .card h4{
+   font-weight: 400;
+   margin-bottom: 0.8rem;
+}
+
+#cards .card p{
+   font-weight: 300;
+   text-align: justify;
+   color: #8f90a6;
+   max-height: 4.5rem;
+   overflow: hidden;
+   margin-bottom: 1.3rem;
+}
+
+#cards .card-price{
+   position: absolute;
+   display: flex;
+   justify-content: end;
+   right: 1rem;
+   bottom: 1rem;
+}
+
+#cards .card-price p{
+   background-color: #0889d4;
+   color: #fff;
+   font-size: 1rem;
+   border-radius: 0.25rem;
+   padding: 0.5rem 1rem;
+   margin: 0;
+}
+
+#reasons {}
+
+#reasons .reasons-content{
+   display: flex;
+   justify-content: space-between;
+}
+
+#reasons .reason{
+   border-left: 2px solid #0889d4;
+   width: 100%;
+}
+
+#reasons .reason:first-of-type{
+   border-left: none;
+}
+
+#reasons .reason p{
+   text-align: center;
+}
+
+#reasons .reason-value{
+   font-size: 2rem;
+}
+
+#reasons .reason-label{
+   font-size: 1.5rem;
+   font-weight: 300;
+   color: #8f90a6;
+}
+
+#specialists{}
+
+#specialists .specialists-content{
+   display: flex;
+   justify-content: space-between;
+   gap: 2rem;   
+}
+
+#specialists .specialist {
+   width: 100%;
+   border: 1.5px solid #dcdceb;
+   border-radius: 0.75rem;
+   padding: 1.5rem;
+   color: #01528a;
+}
+
+#specialists h4{
+   font-size: 1.5rem;
+   font-weight: 400;
+   margin-bottom: 0.5rem;
+}
+
+#specialists p {
+   font-size: 0.8rem;
+   font-weight: 300;
+}
+
+#specialists .specialist-detail{
+   color: #000;
+   font-size: 1rem;
+   font-weight: 300;
+   text-align: justify;
+   padding-top: 1rem;
+}
+
+#values{}
+
+#values .values-content{
+   display: flex;
+   gap: 1.5rem;
+}
+
+#values .values-text{
+   display: flex;
+   flex-direction: column;
+   padding: 0 1.5rem;
+   gap:  1rem;
+}
+
+#values .values-text p{
+   font-size: 1.1rem;
+   text-align: justify;
+   font-weight: 300;
+
+}
+
+#values .values-text .values-detail{
+   padding: 1.5rem;
+}
+
+#values .values-detail .value{
+   display: flex;
+   justify-content: space-between;
+   padding: 0.5rem;
+}
+
+#values .value p{
+   background-image: url(../Img/bullet-values.svg);
+   background-repeat: no-repeat;
+   background-position-y: center;
+   padding-left: 1.5rem;
+   font-weight: 500;
+
+}
+
+footer {
+   background-color: #0889d4;
+   color: #FFF;
+   margin-top: 3rem;
+   padding: 3rem 0;
+}
+
+footer .footer-content{
+   display: flex;
+   justify-content: space-between;
+}
+
+footer .footer-company{
+   width: 450px;
+}
+
+footer .footer-company p {
+   font-size: 1rem;
+   font-weight: 300;
+}
+
+footer .footer-company .footer-brand{
+   background-image: url('../Img/logo_imobiliaria_branca.svg');
+   background-repeat: no-repeat;
+   background-position-y: center;
+   background-size: 2rem;
+   padding-left: 2.5rem;
+   line-height: 2rem;
+   font-size: 1.5rem;
+   font-weight: 300;
+   margin-bottom: 1rem;
+}
+
+footer .footer-menu{
+   font-size: 1rem;
+   font-weight: 300;
+}
+
+footer .footer-menu-title{
+   font-weight: 400;
+}
+
+footer .footer-menu ul{
+   list-style-type: none;
+   margin-top: 1rem;
+}
+
+footer .footer-menu li{
+   margin-bottom: 0.5rem;
+}
+
+footer .footer-menu a{
+   color: #FFF;
+   text-decoration: none;
+}
+
+footer .footer-menu a:hover{
+   text-decoration: underline;
+}
+
+footer .footer-social{
+   display: flex;
+   justify-content: center;
+   padding-top: 1.5rem;
+}
+
+footer .footer-social span{
+   background-repeat: no-repeat;
+   background-position: center;
+   padding: 1rem;   
+}
+
+footer .footer-social .facebook{
+   background-image: url('../Img/icon-facebook.svg');
+}
+
+footer .footer-social .twitter{
+   background-image: url('../Img/icon-twitter.svg');
+}
+
+footer .footer-social .instagram{
+   background-image: url('../Img/icon-instagram.svg');
+}
+
+footer .footer-social .linkedin{
+   background-image: url('../Img/icon-linkedin.svg');
+}
+
+footer .footer-copyright p{
+   font-weight: 300;
+   text-align: center;
+   font-size: 0.8rem;
+   padding-top: 1.5rem;
+}
